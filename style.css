@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    overflow: hidden ;
+
+}
+.header {
+    height: 200px;
+}
+
+.left{
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Linklerde alt çizgi olmaması için */
+.left a {
+    text-decoration: none;
+    color: #757575;
+    opacity: 1;
+}
+/* Link üstüne geldiğinde alt çizgi çıkması için */
+.left a:hover {
+    text-decoration-line: underline;
+}
+
+.about  {
+    float: left;
+}
+
+
+.store  {
+    float: left;
+    padding-left: 18px ;
+}
+
+
+.right  {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.right a{
+    text-decoration: none;
+    color: black
+    ;
+}
+.right a:hover {
+    text-decoration-line: underline;
+    color: #666666
+}
+.gmail {
+    float: right;
+    padding-right:15px;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.ımages {
+    float: right;
+    margin-top: 9px;
+    margin-right: 5px;
+
+
+}
+
+
+
+svg {
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 9px;
+    margin-right:25px ;
+    padding-left: 15px;
+    filter:  invert(40%) sepia(2%) saturate(13%) hue-rotate(338deg) brightness(95%) contrast(84%);
+    
+
+}
+
+svg:hover {
+    filter: invert(9%) sepia(1%) saturate(665%) hue-rotate(315deg) brightness(89%) contrast(88%);
+
+}
+
+#sign {
+    float: right;
+    border-radius: 2px;
+    border-style:none ;
+    width: 70px;
+    height: 30px;
+    background-color: #4485F5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+
+
+.section img {
+    /* Bir height belirlendi ve object fit ile resmimiz bu yüksekliğe sığdırıldı */
+    object-fit: contain;
+    height: 100px;
+}
+
+.searchinput  {
+    /* 3 itemi flex ile böldük ve merkeze hizaladık. Bir border yapısı oluşturuldu ve yükseklik ile padding belirlendi. */
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding:10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+
+}
+
+.searchinput input {
+    /* iconlarımızı sağa ve sola yerleştirmek için flex:1 yapısı kullanıldı. Yukarıda belirlediğimiz width ve iconların hizası ile border çizgilerini yok ettik. */
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.material-icons {
+    display: inline-block;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button {
+    text-align: center;
+    width: 120px;
+    font-family: Arial, sans-serif;
+    outline: 0;
+    font-size: 14px;
+    font-weight:550px;
+    color: #5f6368;
+    margin-left: 10px;
+    margin-right: 10px ;
+    padding: 10px 5px ;
+    /* Mouse ile üstüne geldiğimizde imleç çıkması için */
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+}
+
+.button:hover {
+    /* 0 0 ifadeleri gölgeleme eşit olsun diye yazıldı */
+    box-shadow: 0 0 1px 1px lightgray;
+    color: black;
+}
+
+.footer {
+    background-color: #F2F2F2;
+    height: 3px;
+    /*   */
+    display: flex;
+    /* ilk div'i sola İkinci div'i sağa öteledim */
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 250px;
+}
+
+.footer a {
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #5F6368;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* inherit bir yukarıdaki text-decorationn özelliği alacaktır. */
+    text-decoration: inherit;
+}
+
+/* link üstüne gelindiğinde alt çizgi çıkması */
+.footer a:hover {
+    text-decoration: underline;
+}
+
